@@ -14,5 +14,7 @@ def mark_tasks(tasks_list):
         incompleteTasks[task_number-1]["status"] = True
 
         print(f"The Task [{incompleteTasks[task_number-1]["task"]}] is marked true successfully.")
-    except:
+    except ValueError:
         print("Invalid Input, please enter the number of the task !!")
+    except IndexError:
+        print("Number of task does not exist")
