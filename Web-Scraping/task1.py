@@ -1,3 +1,7 @@
+##########################################################
+############ Web Scraping Task 1 (YallaKora) #############
+##########################################################
+
 import requests
 from bs4 import BeautifulSoup
 import csv
