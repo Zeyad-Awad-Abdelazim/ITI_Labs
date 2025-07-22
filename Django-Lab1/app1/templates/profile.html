@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ name }}</h1>
+        <p>{{ bio }}</p>
+
+        <h3>Skills</h3>
+        <ul>
+            {% for skill in skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+
+        <button onclick="sayHello()">Say Hello</button>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
